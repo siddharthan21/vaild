@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="aaa" method="post" onsubmit= "return xxx()">
+        <label for="">Name:</label>
+        <input type="email" name="name" required><br>
+        <label for="">Password</label>
+        <input type="password" name="password"><br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- <textarea name="" id="" cols="50" rows="250"></textarea> -->
+</body>
+<script>
+function xxx(){
+    var name = document.aaa.name.value;
+    var password = document.aaa.password.value;
+
+    var origalname= "qqq@qq.qq";
+    var origalpass = "qqq";                                                             
+
+    if(name ==  origalname){
+        if(origalpass == password){
+            console.log("both are same");
+        }else{
+            console.log("plaese entere a vaild pssword!@")
+        }
+    }else{
+        // console.log("plaese enter a valid name@!")
+        alert("enter vaild name")
+    }
+}
+</script>                                                                                                           
+</html>
